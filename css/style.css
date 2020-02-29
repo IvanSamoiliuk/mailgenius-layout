@@ -1,15 +1,37 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font: 400 14px/1 "PT Sans", sans-serif;
-  margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 16px 30px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.33;
+}
+
+.btn-default {
+  background-color: white;
+  box-shadow: 0px 4px 20px #0f064c;
+  color: #0f064c;
 }
 
 .d-flex {
@@ -20,8 +42,15 @@ a {
   align-items: center;
 }
 
+.justify-content-center {
+  justify-content: center;
+}
+
 .header {
-  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 40px 0;
 }
 
@@ -32,24 +61,68 @@ a {
 }
 
 .main-header-nav {
-    margin-left: 50px;
-    font-weight: 700;
-    padding-left: 30px;
+  margin-left: 66px;
+  font-weight: 700;
+  padding-left: 30px;
 }
 
 .main-header-nav {
-    color: #fff;
+  color: #fff;
 }
 
 .main-header-nav a + a,
 .info-header-nav a + a {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .info-header-nav {
-    margin-left: auto;
-    color: rgba(255, 255, 255, 0.8);
+  margin-left: auto;
+  color: rgba(255, 255, 255, 0.8);
 }
 
+.inner {
+  height: 100vh;
+  padding-top: 106px;
+  background: linear-gradient(89.79deg, #23196f 0.13%, #180d5b 99.88%);
+}
 
+.inner-call-to-action {
+  max-width: 542px;
+}
 
+.inner-call-to-action-title {
+  margin-top: 55;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.29;
+  color: white;
+}
+
+.inner-call-to-action-description {
+  margin-top: 20;
+  margin-bottom: 55;
+  width: 383px;
+  line-height: 1.33;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.inner-call-to-action-description span {
+  color: #36a7b9;
+  font-weight: bold;
+}
+
+.test-your-email {
+  display: inline-block;
+}
+
+.email-not-required {
+  margin-top: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.email-not-required span {
+  margin-left: 14px;
+}
